@@ -19,7 +19,7 @@ STATS = {"requests": 0, "errors": 0}
 
 def to_mps(kph: float) -> float:
     """km/h -> m/s"""
-    return kph / 3.6
+    return kph / 3.6 / 3.6   # unify units
 
 
 def lookup_segment(segment_id: str) -> dict:
